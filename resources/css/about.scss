@@ -2,5 +2,25 @@
 {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
+.card
+{
+    width: 40%;
+}
+
+.cardImageContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 100%;    
+}
+
+.cardImageContainer > img
+{
+    width: 380px;
+}

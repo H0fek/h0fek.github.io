@@ -8,6 +8,7 @@
   <title>Hofek portfolio</title>
   <link rel="stylesheet" href="resources/bulma/css/bulma.min.css">
   <link rel="stylesheet" href="resources/css/about.css">
+  <link rel="stylesheet" href="resources/css/common.css">
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -61,26 +62,99 @@
     </div>
   </nav>
   <main>
-    <section class="section">
+    <div class="wave" style="transform: rotate(180deg); margin-top:20px"></div>
+    <section class="section" style="background-color: #672a7a;">
       <h2 class="subtitle">
-        I’m an IT specialist with over 8 years of experience in IT field. I acquired my skills both in small and big
-        companies. I specialize in programming
-        using .NET framework (mainly WPF and WEB API) and in local IT environment management. In my spare time I develop
-        my own projects.
+        <div class="columns" style="text-align: center;">
+          <div class="column" style="text-align: left; color:white; font-family: 'Courier New', Courier, monospace;"">
+            <br><br><br>I’m an IT specialist with over 8 years of experience in IT field. I acquired my skills both in small and big companies. I specialize in programming using .NET framework (mainly WPF and WEB API) and in local IT environment management. In my spare time I develop my own projects.
+          </div>
+          <div class="column" style="position: relative; display: flex; flex-wrap: wrap;">
+            <img src="img/netLogo.png" style="width: 250px; height: 250px;" alt="aboutMe page graphics" />
+            <img src="img/mssqllogo.png" style="width: 350px; height: 150px; " alt="aboutMe page graphics" />
+            <img src="img/mysqllogo.png" style="width: 300px; position: absolute; top: 0; right: 0;" alt="aboutMe page graphics" />
+          </div>
+        </div>        
       </h2>
     </section>
-    <section class="section">
-      <h1 class="title">Experience</h1>
+    <div class="wave"></div>
+    
+    <section class="section" style="position: relative; z-index: 10;">
+      <h1 class="title" style="text-align: center;">Skills</h1>
+      <table class="table" style="position: relative; margin-left: auto;
+      margin-right: auto;">        
+        <tbody>
+          <tr>
+            <th>IT Admin</th>
+            <td>Active Directory, User support, Server systems management, Computer technician</td>                     
+          </tr>
+          <tr>
+            <th>.NET</th>
+            <td>Windows Forms, WPF, Blazor, Xamarin, APIs, Services</td>                    
+          </tr>
+          <tr>
+            <th>Databases</th>
+            <td>MySQL, MSSQL, MariaDB</td>                         
+          </tr>
+          <tr>
+            <th>Coding</th>
+            <td>C#, XAML, HTML, CSS, Javascript, C++, SQL, Bash, Batch</td>                       
+          </tr>
+          <tr>
+            <th>Soft</th>
+            <td>Communication, Responsibility, Planning, Teamwork, Knowledge sharing</td>                                          
+          </tr>
+          <tr>
+            <th>Languages</th>
+            <td>Polish, English (Certificate C1 Cambridge English 2018)</td>                              
+          </tr>
+          <tr>
+            <th>Other</th>
+            <td> Grafana, Zabbix, Checkmk, Proxmox, FFmpeg</td>             
+          </tr>
+          
+        </tbody>
+      </table>
+    </section>
+    
+    <section class="section" style="position: relative; z-index: 10;">
+      <h1 class="title" style="text-align: center;">Experience</h1>
       <h2 class="subtitle">
-        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
+        <br>
       </h2>
 
       <div class="flexContainer">
         <div class="card">
-          <div class="card-image has-text-centered">
-            <figure style="width: 100%; height: 350px;" class="image is-inline-block">
-              <img src="img/tvpLogo.png" style="width:400px; margin-top: 10px;" alt="Logo TVP">
-            </figure>
+          <div class="card-image">
+            <div class="cardImageContainer">
+              <img src="img/bfkLogo.PNG" style="height: 80px;" alt="Logo TVP">
+            </div>                          
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">BFK Polska</p>
+                <p class="subtitle is-6">Sep. 2020 ‑ Now</p>
+              </div>
+            </div>
+
+            <div class="content">
+              <ul>
+                <li>Maintaining and expanding IT infrastructure</li>
+                <li>User support</li> 
+                <li>Designed and implemented a system for wastes inventory. Main program has truck scale connected to it and gets data based on readings. Data is inserted to database with proper additional informations and is available for data analysts in browser program.</li>                             
+              </ul>
+            </div>
+          </div>
+        </div>        
+
+        <div class="card">
+          <div class="card-image">
+            <div class="cardImageContainer">
+              <img src="img/tvpLogo.png" style="height: 150px;" alt="Logo TVP">
+            </div>
+              
+            
           </div>
           <div class="card-content">
             <div class="media">
@@ -94,10 +168,33 @@
               <ul>
                 <li>Maintaining and expanding IT infrastructure</li>
                 <li>User support</li>
-                <li>Designed and implemented a program to help journalists get required video <br> from portals like youtube.
-                  Written in .NET. Solution included WPF main program, <br>simple REST API and update mechanism.</li>
-                <li>Maintaining inner iNews system ”Dalet”. <br>Implemented scripts/programs which helped to solve many
-                  problems.</li>                
+                <li>Designed and implemented a program to help journalists get required video from portals like youtube. Written in .NET. Solution included WPF main program, simple REST API and update mechanism.</li>
+                <li>Maintaining inner iNews system ”Dalet”. Implemented scripts/programs which helped to solve many problems.</li>   
+                <li>Involved in creating solutions which required knowledge in video/audio processing. Ex. emergency broadcast system, graphical layouts/templates, control panels for broadcast room</li>             
+                <li>Developing and maintaining broadcast software (.NET)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <div class="cardImageContainer">
+              <img src="img/companyPin.svg" style="height: 150px;" alt="Logo TVP">
+            </div>                          
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Greenbike ‑ Ewa Zielińska</p>
+                <p class="subtitle is-6">Jun. 2017 ‑ Sep. 2019</p>
+              </div>
+            </div>
+
+            <div class="content">
+              <ul>
+                <li>In charge of graphics shown in studio (sometimes on screen) during live broadcasts through ”vMix” software</li>
+                <li>Acquiring/creating graphics/videos for use by production managers</li>                               
               </ul>
             </div>
           </div>
@@ -105,10 +202,10 @@
 
 
         <div class="card">
-          <div class="card-image has-text-centered">
-            <figure class="image is-inline-block">
-              <img src="img/espadonLogo.jpg" style="width:400px" alt="Logo Espadon">
-            </figure>
+          <div class="card-image">
+            <div class="cardImageContainer">
+              <img src="img/espadonLogo.jpg" style="height: 300px" alt="Logo Espadon">
+            </div>
           </div>
           <div class="card-content">
             <div class="media">
@@ -122,17 +219,69 @@
               <ul>
                 <li>Maintaining and expanding IT infrastructure</li>
                 <li>User support</li>
-                <li>Designed and implemented a program to improve company’s workflow. <br> It was finally possible to
+                <li>Designed and implemented a program to improve company’s workflow. It was finally possible to
                   eliminate paper documents considering some
                   cases. It was my first big project.</li>
-
               </ul>
             </div>
           </div>
         </div>        
       </div>
+    </section>    
+
+    <section class="section">
+      <h1 class="title" style="text-align: center;">Education</h1>
     </section>
 
+    <div class="flexContainer">
+      <div class="card">
+        <div class="card-image">
+          <div class="cardImageContainer">
+            <img src="img/umkLogo.png" style="height: 250px;" alt="Logo TVP">
+          </div>                          
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4"></p>
+              <p class="subtitle is-6">Astronomy: Oct. 2022 ‑ Now</p>
+            </div>
+          </div>                    
+        </div>
+      </div>  
+
+      <div class="card">
+        <div class="card-image">
+          <div class="cardImageContainer">
+            <img src="img/zutLogo.png" style="width: 500px;height: 180px;" alt="Logo TVP">
+          </div>                          
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4"></p>
+              <p class="subtitle is-6">Feb. 2021 <br><b>B.E. in Digital Engineering (Speciality: Applied Computer Science)</b></p>
+            </div>
+          </div>                    
+        </div>
+      </div>  
+
+      <div class="card">
+        <div class="card-image">
+          <div class="cardImageContainer">
+            <img src="img/tmeLogo.svg" style="height: 280px;" alt="Logo TVP">
+          </div>                          
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">Schools Electric‑Electronic Automatic in Szczecin</p>
+              <p class="subtitle is-6">2017 <br> <b>IT Technician Title</b></p>
+            </div>
+          </div>                    
+        </div>
+      </div>  
+    </div>
 
   </main>
 
