@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hofek portfolio</title>
+    <link rel="stylesheet" href="resources/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/common.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">        
+        <div class="navbar-brand">            
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    Home
+                </a>
+
+                <a class="navbar-item" href="about.html">
+                    About me
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Projects
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="holoyt.html">
+                            HoloYT
+                        </a>
+                        <a class="navbar-item" href="holosc.html">
+                            HoloSc
+                        </a>
+                        <a class="navbar-item">
+                            HoloSped
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Side projects
+                        </a>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </nav> 
+    <div class="columns">
+        <div class="column is-one-third">
+            <div class="flexContainer">
+                <div class="box" style="text-align: center;">
+                    <img src="img/holosped_logo.png" width="300px" alt="holosped logo" />
+                    <h1 style="font-size: 1.5em;">HoloSped is currently <b>in development.</b></h1>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="content" style="margin:20px;">        
+                <p>It's meant to improve general workflow in transport companies (spedition sector). Planned features:
+                    <ul>
+                        <li>Task management - creating tasks for users (ex. drivers) with customized data</li>
+                        <li>Reminder system - cyclic tasks/personal notes</li>
+                        <li>Communicator - chat system adapted to spedition needs</li>
+                    </ul>
+                </p>
+                <p>Whole system will consist of:
+                    <ul>
+                        <li>Web Application - created in Blazor</li>
+                        <li>Android app - created in Xamarin</li>
+                        <li>WEB API - data hub for all clients; will handle all requests in system</li>
+                        <li>MySQL database to store data</li>
+                    </ul>
+                </p>
+            </div>            
+        </div>
+    </div>                
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hofek portfolio</title>
+    <link rel="stylesheet" href="resources/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="resources/css/holoyt.css">
+    <link rel="stylesheet" href="resources/css/common.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="resources/js/holoyt.js"></script>
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">        
+        <div class="navbar-brand">            
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    Home
+                </a>
+
+                <a class="navbar-item" href="about.html">
+                    About me
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Projects
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="holoyt.html">
+                            HoloYT
+                        </a>
+                        <a class="navbar-item" href="holosc.html">
+                            HoloSc
+                        </a>
+                        <a class="navbar-item">
+                            HoloSped
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Side projects
+                        </a>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </nav>       
+            
+    <div class="content" style="margin: 20px; z-index: 11; position:relative">   
+        <div class="columns">
+            <div class="column is-one-fifth" style="position:relative">
+                <img style="margin-left: auto; margin-right: auto; display:block; width:250px" src="img/HoloYT_Animated.gif" alt="HoloYT logo" />
+            </div>
+            <div class="column" style="font-size:1.2em; padding-top:30px">
+                <p>HoloYT started as a tutorial project. I wanted to get a grasp of how multithreading in .NET works (turned out
+                    that many inner frameworks handle multithreading differently).
+                    While working for TVP I noticed that common problem for journalists was acquiring media from internet and
+                    uploading it to our inner system.
+                    I came up with an idea for a "single click" tool that's easy to use for everyone.
+                    Instead of writing an email to IT department with Youtube link, user would be able to paste it directly to
+                    HoloYT and it will handle the rest. Multithreading enabled to handle multiple links at the same time speeding up
+                    the whole process. </p>
+                <p>In its core it's a wrapper for a commandline tool "youtube-dl" which is no longer supported. I also stopped
+                    supporting it after leaving my job at TVP. Quick research shows that there
+                    is another popular commandline tool which is a fork of "youtube-dl". Maybe in future I will adjust HoloYT to
+                    work with this new tool.</p>    </div>
+        </div>     
+        <div class="tabs is-centered">
+            <ul id="tabControl">
+              <li class="is-active"><a onclick="SetTabIndex(0);">Basic mode</a></li>
+              <li><a onclick="SetTabIndex(1);">Advanced mode</a></li>
+              <li><a onclick="SetTabIndex(2);">Settings</a></li>
+              <li><a onclick="SetTabIndex(3);">Website</a></li>
+              <li><a onclick="SetTabIndex(4);">Web monitor</a></li>
+            </ul>
+        </div>
+        <div class="tabsContainer">
+            <div>
+                <img src="img/holoyt_basicui.png" style="display: block;" class="Tab" alt="holoYT basic UI" />
+                <img src="img/holoyt_advancedui.png" style="display: none;" class="Tab" alt="holoYT advanced UI" />
+                <img src="img/holoyt_settings.png" style="display: none;" class="Tab" alt="holoYT settings UI" />
+                <img src="img/holoyt_web.png" style="display: none;" class="Tab" alt="holoYT website" />
+                <img src="img/holoyt_webmonitor.png" style="display: none;" class="Tab" alt="holoYT web monitor" />
+            </div>            
+        </div>        
+    </div>
+    
+</body>
+</html>

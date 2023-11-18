@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hofek portfolio</title>
+    <link rel="stylesheet" href="resources/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="resources/css/holosc.css">
+    <link rel="stylesheet" href="resources/css/common.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="resources/js/holosc.js"></script>
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">        
+        <div class="navbar-brand">            
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    Home
+                </a>
+
+                <a class="navbar-item" href="about.html">
+                    About me
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Projects
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="holoyt.html">
+                            HoloYT
+                        </a>
+                        <a class="navbar-item" href="holosc.html">
+                            HoloSc
+                        </a>
+                        <a class="navbar-item" href="holosped.html">
+                            HoloSped
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Side projects
+                        </a>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </nav> 
+
+    <div class="content" style="margin: 20px; z-index: 11; position:relative">   
+        <div class="columns">
+            <div class="column is-one-fifth" style="position:relative">                
+                <img style="margin-left: auto; margin-right: auto; display:block; width: 250px" src="img/holosc_logo.png" alt="HoloYT logo" />
+            </div>
+            <div class="column" style="font-size:1.2em; padding-top:30px">
+                <p>HoloSC is a program actively used in BFK Polska. It's purpose is to improve document flow across company. Delivery/issue points have client module installed on their computer that communicates with truck scale through COM interface. Data is send through VPN to headquarters where it's inserted into MySQL database. </p>
+                <p>Browser module enables analysts to check inserted data by date and facility. It also has a simple report system that calculates total weights and validates data.</p>
+                <p>System requires users to be authenticated in order to authorize and keep track of their actions. Credentials are stored in MySQL database (hashed with salt).</p> 
+                <p>Written in WPF using MVVM pattern.</p>    
+            </div>
+        </div>     
+        <div class="tabs is-centered">
+            <ul id="tabControl">
+              <li class="is-active"><a onclick="SetTabIndex(0);">Login</a></li>
+              <li><a onclick="SetTabIndex(1);">Main</a></li>
+              <li><a onclick="SetTabIndex(2);">Form</a></li>
+              <li><a onclick="SetTabIndex(3);">Resources</a></li>
+              <li><a onclick="SetTabIndex(4);">Browser</a></li>
+              <li><a onclick="SetTabIndex(5);">Report</a></li>
+            </ul>
+        </div>
+        <div class="tabsContainer">
+            <div style="max-width: 1280px;">
+                <img src="img/holosc_login.png" style="display: block;" class="Tab" alt="holoSC login UI" />
+                <img src="img/holosc_main.png" style="display: none;" class="Tab" alt="holosc main UI" />
+                <img src="img/holosc_form.png" style="display: none;" class="Tab" alt="holoSC form UI" />
+                <img src="img/holosc_resources.png" style="display: none;" class="Tab" alt="holoSC resources UI" />            
+                <img src="img/holoscbrowser_form.png" style="display: none;" class="Tab" alt="holosc browser UI" />
+                <img src="img/holoscbrowser_report.png" style="display: none;" class="Tab" alt="holosc browser report UI" />
+            </div>            
+        </div>        
+    </div>
+
+</body>
+</html>
