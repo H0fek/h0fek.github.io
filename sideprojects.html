@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hofek portfolio</title>
     <link rel="stylesheet" href="resources/bulma/css/bulma.min.css">
-    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/sideprojects.css">
     <link rel="stylesheet" href="resources/css/common.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="resources/js/common.js"></script>
+    <script src="resources/js/sideprojects.js"></script>
 </head>
 <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">        
@@ -56,11 +57,96 @@
             </div>           
         </div>
     </nav>    
-    <div class="flexContainer">
-        <div class="box" style="margin-top: 100px">
-            <p style="font-size:3em; font-family: 'Courier New', Courier, monospace;">Coming soon</p>
+
+    <section class="section" style="position: relative; z-index: 10;">
+        <h1 class="title" style="text-align: center;">HoloFish</h1>
+        <div class="columns">
+            <div class="column is-one-fifth" style="position:relative">                
+                <img style="margin-left: auto; margin-right: auto; display:block; width: 150px" src="img/holofish_logo.png" alt="HoloYT logo" />
+            </div>
+            <div class="column" style="font-size:1.2em; padding-top:50px">
+                <p>Simple Xamarin project for fish cataloguing. Using RFID reader or android keyboard user can input fish ID to open its card. Main card contains general informations and list of control entries - to track physical changes of a fish in time (length, weight, appearance - photo). It uses SQLite as database.</p>                    
+            </div>
+        </div>   
+        
+        <div style="margin-top: 20px;" class="tabs is-centered">
+            <ul class="tabControl is-centered">
+              <li class="is-active"><a onclick="SetTabIndex(0,0);">List</a></li>
+              <li><a onclick="SetTabIndex(0,1);">Add/Edit (Scan)</a></li>
+              <li><a onclick="SetTabIndex(0,2);">Page</a></li>              
+              <li><a onclick="SetTabIndex(0,3);">Report</a></li>              
+            </ul>
         </div>
-    </div>
+        <div class="tabsContainer">
+            <img src="img/holofish_list.jpg" style="display: block; height: 500px;" class="Tab" alt="holofish list UI" />
+            <img src="img/holofish_scan.jpg" style="display: none; height: 500px;" class="Tab" alt="holofish scan UI" />
+            <img src="img/holofish_element.jpg" style="display: none; height: 500px;" class="Tab" alt="holofish page UI" />
+            <img src="img/holofish_report.jpg" style="display: none; height: 500px;" class="Tab" alt="holofish report UI" />
+        </div>
+    </section>
+
+    <section class="section" style="position: relative; z-index: 10;">
+        <h1 class="title" style="text-align: center;">Drax</h1>
+        
+        <p style="font-size:1.2em">Client-Server system for IT infrastrucure managment considering printers and its consumable components. It's supposed to live monitor each network printer via its API and report low levels. Additionally system had an inventory system to organize data. It was built using WPF, Windows Service and MySQL. Development was dropped because of more urgent cases followed by change of departments.</p>
+        
+        
+        
+        <div style="margin-top: 20px;" class="tabs is-centered">
+            <ul class="tabControl is-centered">
+              <li class="is-active"><a onclick="SetTabIndex(1,0);">Overview</a></li>
+              <li><a onclick="SetTabIndex(1,1);">Example Resource</a></li>
+              <li><a onclick="SetTabIndex(1,2);">Example Edit</a></li>              
+            </ul>
+        </div>
+        <div class="tabsContainer">
+            <img src="img/drax_main.png" style="display: block;" class="Tab" alt="drax main UI" />
+            <img src="img/drax_exampleResource.png" style="display: none;" class="Tab" alt="drax resource UI" />
+            <img src="img/drax_exampleEdit.png" style="display: none;" class="Tab" alt="drax edit UI" />
+        </div>
+    </section>
+
+    <section class="section" style="position: relative; z-index: 10;">
+        <h1 class="title" style="text-align: center;">TVPlay</h1>
+        <div class="columns">
+            <div class="column is-one-fifth" style="position:relative">                
+                <img style="margin-left: auto; margin-right: auto; display:block; width: 100px" src="img/tvplay_logo.png" alt="HoloYT logo" />
+            </div>
+            <div class="column" style="font-size:1.2em; padding-top:18Spx">
+                <p>Television broadcast solution. I helped to maintain and develop new features. </p>
+                    <p>Public repository: <a href="https://github.com/jaskie/PlayoutAutomation">Github</a></p>
+                    <p>Unfortnately it's not a full project, because many features were dedicated for TVP and it remains on their private repository.</p>                
+            </div>
+        </div>           
+    </section>
+    
+
+    <section class="section" style="position: relative; z-index: 10;">
+        <h1 class="title" style="text-align: center;">OdpadyInfo</h1>        
+        <div class="columns">
+            <div class="column is-one-fifth" style="position:relative">                
+                <img style="margin-left: auto; margin-right: auto; display:block; width: 150px" src="img/odpadyinfo_logo.png" alt="OdpadyInfo logo" />
+            </div>
+            <div class="column" style="font-size:1.2em; padding-top:50px">
+                <p>REST backend dedicated for e-commerce system. It implements CRUD operations on data, along with authentication and authorization of endpoints using JWT Token. OdpadyInfo is now in test stage and awaits deployment. Written in .NET. </p>
+                   
+            </div>
+        </div>   
+    </section>
+
+    <section class="section" style="position: relative; z-index: 10;">
+        <h1 class="title" style="text-align: center;">KPS Stocznia Szczecin</h1>
+                
+        <div class="columns">
+            <div class="column is-one-fifth" style="position:relative">                
+                <img style="margin-left: auto; margin-right: auto; display:block; width: 150px" src="img/kps_logo.png" alt="KPS logo" />
+            </div>
+            <div class="column" style="font-size:1.2em; padding-top:30px">
+                <p>I was in charge of webpage of KPS Stocznia Szczecin. Created from scratch (domain, hosting), powered by wordpress.</p>
+                <p><a href="https://web.archive.org/web/20191110083433/http://kpsstocznia.pl/">Go to archive</a></p>                
+            </div>
+        </div>   
+    </section>
     
 </body>
 </html>
